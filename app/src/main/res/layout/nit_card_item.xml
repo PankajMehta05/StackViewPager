@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="68dp" >-->
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/card_view"-->
+        <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:layout_height="62dp"-->
+        <!--card_view:cardCornerRadius="4dp"-->
+        <!--card_view:elevation="14dp">-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_image"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:src="@drawable/abc_btn_radio_material">-->
+            <!--</ImageView>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_text"-->
+
+                <!--android:layout_toRightOf ="@+id/iv_image"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center" >-->
+            <!--</TextView>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_blah"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="blah blah blah......"-->
+                <!--android:layout_below="@+id/tv_text"-->
+                <!--android:layout_toRightOf="@+id/iv_image"-->
+                <!--android:layout_toEndOf="@+id/iv_image">-->
+            <!--</TextView>-->
+
+        <!--</RelativeLayout>-->
+    <!--</android.support.v7.widget.CardView>-->
+
+<!--</RelativeLayout>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="#ffffff"
+    android:orientation="vertical"
+
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        app:cardCornerRadius="10px"
+        app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+        <TableLayout
+            android:id="@+id/simpleTableLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#191A19"
+            android:stretchColumns="1"> <!-- stretch the second column of the layout-->
+
+            <!-- first row of the table layout-->
+            <TableRow
+
+                android:id="@+id/firstRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- first element of the row-->
+
+
+                >
+
+                <TextView
+
+                    android:id="@+id/tv00"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="Organisation Chain"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scrollbars="none"
+
+                    >
+
+                    <TextView
+
+                        android:id="@+id/tv01"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+
+                        android:text="Text 2"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                </ScrollView>
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/secondRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+
+                    android:id="@+id/tv10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="Tender Reference Number"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scrollbars="none"
+
+                    >
+
+                    <TextView
+
+                        android:id="@+id/tv11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="Text 2"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </ScrollView>
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/thirdRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+
+                    android:id="@+id/tv20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+
+                    android:text="Tender ID"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scrollbars="none"
+
+                    >
+
+
+                    <TextView
+                        android:id="@+id/tv21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="Text 2"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                </ScrollView>
+            </TableRow>
+
+
+            <TableRow
+
+                android:id="@+id/fourthRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- first element of the row-->
+                <TextView
+
+                    android:id="@+id/tv30"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="Tender fee"
+                    android:textColor="#000"
+                    android:textSize="15dp" />
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scrollbars="none"
+
+                    >
+
+
+                    <TextView
+
+                        android:id="@+id/tv31"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="Text 2"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </ScrollView>
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/fifthRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+                    android:id="@+id/tv40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+
+                    android:text="EMD Amount in"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scrollbars="none"
+
+                    >
+
+
+                    <TextView
+                        android:id="@+id/tv41"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_weight="50"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="Text 2"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </ScrollView>
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/sixthRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100">
+
+                <!-- first element of the row-->
+                <TextView
+                    android:id="@+id/tv50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#ffffff"
+
+                    android:gravity="center"
+                    android:text="EMD Exeption Allowed"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scrollbars="none"
+
+                    >
+
+                    <TextView
+
+                        android:id="@+id/tv51"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="Text 2"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv51"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginRight="2dp"-->
+                    <!--android:layout_marginBottom="2dp"-->
+                    <!--android:background="#ffffff"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Text 2"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="15sp" />-->
+                </ScrollView>
+            </TableRow>
+
+
+            <TableRow
+
+                android:id="@+id/seventhRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- first element of the row-->
+                <TextView
+                    android:id="@+id/tv60"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="Work Description"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scrollbars="none"
+
+                    >
+
+                    <TextView
+
+                        android:id="@+id/tv61"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="Text 2"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                </ScrollView>
+
+            </TableRow>
+
+
+            <TableRow
+
+                android:id="@+id/eigthRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+                    android:id="@+id/tv70"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+
+                    android:text="Tender value In"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scrollbars="none"
+
+                    >
+
+
+                    <TextView
+                        android:id="@+id/tv71"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="Text 2"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+
+                </ScrollView>
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/ninthRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+                    android:id="@+id/tv80"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+
+                    android:layout_marginBottom="2dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="Period of Work(Days)"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scrollbars="none"
+
+                    >
+
+
+                    <TextView
+
+                        android:id="@+id/tv81"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="Text 2"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                </ScrollView>
+
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/tenthRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+                    android:id="@+id/tv90"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="Published Date"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scrollbars="none"
+
+                    >
+
+
+                    <TextView
+                        android:id="@+id/tv91"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="Text 2"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                </ScrollView>
+
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/eleventhrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+                    android:id="@+id/tv100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="Sale End Date"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scrollbars="none"
+
+                    >
+
+
+                    <TextView
+                        android:id="@+id/tv101"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="Text 2"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+                </ScrollView>
+
+            </TableRow>
+
+            <TableRow
+
+                android:id="@+id/twelvethRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+                <TextView
+                    android:id="@+id/tv110"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="NIT Document"
+                    android:textColor="#000"
+                    android:textSize="15sp" />
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scrollbars="none"
+
+                    >
+
+
+                    <TextView
+
+                        android:id="@+id/tv111"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="Text 2"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+
+                </ScrollView>
+
+            </TableRow>
+        </TableLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+
